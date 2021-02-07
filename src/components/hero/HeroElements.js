@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 import defaultBcg from '../../images/defaultBcg.jpeg';
-import roomBg from '../../images/room-2.jpeg';
 
 export const HeroContainer = styled.header`
-  min-height: ${({ type }) =>
-    type === 'default' ? 'calc(100vh - 66px)' : '60vh'};
-  background-image: ${({ type }) =>
-    type === 'default' ? `url(${defaultBcg})` : `url(${roomBg})`};
+  min-height: ${({ img }) => (img ? '60vh' : 'calc(100vh - 66px)')};
+  background-image: ${({ img }) =>
+    img ? `url(${img})` : `url(${defaultBcg})`};
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

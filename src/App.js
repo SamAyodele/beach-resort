@@ -1,6 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import { GlobalStyle } from './GlobalStyles';
+import { GlobalStyle } from './helpers/GlobalStyles';
+import ScrollToTop from './helpers/scrollToTop';
 import { NavBar } from './components';
 import { Home, Rooms, SingleRoom, Error } from './pages';
 
@@ -9,6 +10,7 @@ const App = () => {
     <>
       <GlobalStyle />
       <NavBar />
+      <ScrollToTop />
       <Switch>
         <Route exact path='/' component={Home} />
 

@@ -73,3 +73,9 @@ export const BtnPrimary = styled.button`
     color: var(--primaryColor);
   }
 `;
+
+export const ErrorContainer = styled.div`
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+`;

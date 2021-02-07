@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { BtnPrimary } from '../GlobalStyles';
-import { Hero, Banner, Services } from '../components';
+import { BtnPrimary } from '../helpers/GlobalStyles';
+import { Hero, Banner, Services, Featured } from '../components';
 
 const Home = () => {
   return (
@@ -19,6 +19,8 @@ const Home = () => {
       </Hero>
 
       <Services />
+
+      <Featured />
     </>
   );
 };

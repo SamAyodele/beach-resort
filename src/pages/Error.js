@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import { BtnPrimary } from '../GlobalStyles';
+import { BtnPrimary } from '../helpers/GlobalStyles';
 
 import { Hero, Banner } from '../components';
 
